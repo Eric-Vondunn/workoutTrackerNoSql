@@ -43,3 +43,12 @@ app.use(require("./routes/view.js"));
 app.listen(PORT, () => {
   console.log(`App is running on port ${PORT}!`);
 });
+
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://evondunn:Milk40%21%2117@cluster0.gkaou.mongodb.net/workouts_db?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
