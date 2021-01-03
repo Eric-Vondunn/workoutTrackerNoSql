@@ -4,13 +4,8 @@ const mongoose = require("mongoose");
 const path = require("path");
 const fs = require("fs");
 
-const PORT = 3000;
-
-const server_port = process.env.YOUR_PORT || process.env.PORT || 80;
-const server_host = process.env.YOUR_HOST || "0.0.0.0";
-server.listen(server_port, server_host, function () {
-  console.log("Listening on port %d", server_port);
-});
+// const PORT = 3000;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 
